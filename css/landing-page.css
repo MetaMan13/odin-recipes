@@ -1,0 +1,61 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav h1 {
+    font-size: 6em;
+    padding: 0.5em 0em;
+}
+
+nav h1 a:hover {
+    color: var(--button-color);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    margin-bottom: 3em;
+}
+
+.landing-page-recipe-container {
+    display: flex;
+    flex-direction: column-reverse;
+    background: white;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.landing-page-recipe-container a {
+    font-size: 2em;
+    padding: 0.75em 0em;
+}
+
+.landing-page-recipe-container a:hover {
+    color: var(--button-color);
+}
+
+.landing-page-recipe-container img {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.landing-page-bottom-navigation {
+    margin-top: 1em;
+    text-align: center;
+}
+
+.landing-page-bottom-navigation a {
+    font-size: 1.5em;
+    display: block;
+    padding: 0.5em 0em;
+    border-radius: 10px;
+    color: var(--main-background);
+    background-color: var(--font-color);
+}
+
+.landing-page-bottom-navigation a:hover {
+    background-color: var(--button-color);
+}
