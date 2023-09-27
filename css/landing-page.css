@@ -22,22 +22,31 @@ main {
 
 .landing-page-recipe-container {
     display: flex;
+    flex-direction: column;
+}
+
+.landing-page-recipe-item {
+    display: flex;
     flex-direction: column-reverse;
     background: white;
     text-align: center;
     border-radius: 10px;
 }
 
-.landing-page-recipe-container a {
+.landing-page-recipe-item:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.landing-page-recipe-item a {
     font-size: 2em;
     padding: 0.75em 0em;
 }
 
-.landing-page-recipe-container a:hover {
+.landing-page-recipe-item a:hover {
     color: var(--button-color);
 }
 
-.landing-page-recipe-container img {
+.landing-page-recipe-item img {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
@@ -58,4 +67,16 @@ main {
 
 .landing-page-bottom-navigation a:hover {
     background-color: var(--button-color);
+}
+
+@media screen and (min-width: 768px) {
+    .main {
+        max-width: 700px;
+    }
+
+    .landing-page-recipe-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2em;
+    }
 }

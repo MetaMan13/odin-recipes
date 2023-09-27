@@ -10,6 +10,7 @@ html {
     font-family: "Skranji", cursive;
     background: var(--main-background);
     color: var(--font-color);
+    scroll-behavior: smooth;
 }
 
 *,
